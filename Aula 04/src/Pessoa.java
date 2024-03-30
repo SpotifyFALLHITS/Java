@@ -1,17 +1,21 @@
 public class Pessoa{
     private String nome;
     private String endereco;
-    private String email;
     private String telefone;
+    private String email;
+    private String codigo;
 
     public Pessoa(){
+
     }
+
     public Pessoa(String nome, String endereco, String email, String telefone){
-    this.nome = nome;
-    this.endereco = endereco;
-    this.email = email;
-    this.telefone = telefone;
+        this.nome = nome;
+        this.endereco = endereco;
+        this.telefone = telefone;
+        this.email = email;
     }
+
     public void setNome(String nome){
         this.nome = nome;
     }
@@ -24,16 +28,22 @@ public class Pessoa{
     public String getEndereco(){
         return this.endereco;
     }
+    public void setTelefone(String telefone){
+        this.telefone = telefone;
+    }
+    public String getTelefone(){
+        return  this.telefone;
+    }
     public void setEmail(String email){
         this.email = email;
     }
     public String getEmail(){
         return this.email;
     }
-    public void setTelefone(String telefone){
-        this.telefone = telefone;
+    public void setCodigo(String codigo){
+        this.codigo = codigo;
     }
-    public String getTelefone(){
-        return this.telefone;
+    public String getCodigo(){
+        return this.codigo;
     }
 }
